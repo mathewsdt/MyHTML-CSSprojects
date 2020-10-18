@@ -1,0 +1,15 @@
+html {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+form {
+    width: auto;
+    margin: 5% auto;
+    border-radius: 5px;
+    border-bottom: 3px solid darkgoldenrod;
+    border-top: 3px solid darkgoldenrod;
+    border-left: 7px darkgoldenrod;
+    border-right: 7px darkgoldenrod;
+}
+
