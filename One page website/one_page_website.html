@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 	<title>KINGDOM</title>
 	<link rel="stylesheet" href="./css/one_page_website.css">
+	<script src="./JS/one_page_websites.js"></script>
 </head>
 <div class="topnav">
   <a class="active" href="#home">Home</a>
@@ -48,14 +49,60 @@
 
 <section>
 
-<div class="row">
-	<div class="column">
-    <img src="image2.jpg" alt="Greece" style="width:30%">
-    </div>
- <div class="column">
-    <img src="image3.jpg" alt="vaction" style="width:30%">
+	<div class="row">
+		<div class="column">
+    	<img src="image2.jpg"   onclick="openModal();currentSlide(1)" class="hover-shadow" >
+    	</div>
+ 		<div class="column">
+    	<img src="image3.jpg"  onclick="openModal();currentSlide(1)" class="hover-shadow" >
+		</div>
+		<div class="column">
+		<img src="image4.jpg"   onclick="openModal();currentSlide(1)" class="hover-shadow">
+		</div>
 	</div>
- </div>
+
+	<div id="myModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+	  
+		  <div class="mySlides">
+			<div class="numbertext">1 / 3</div>
+			<img src="image2.jpg" style="width:100%;">
+		    </div>
+	  
+		  <div class="mySlides">
+			<div class="numbertext">2 / 3</div>
+			<img src="image3.jpg" style="width: 100%;">
+		    </div>
+	  
+		  <div class="mySlides">
+			<div class="numbertext">3 / 3</div>
+			<img src="image4.jpg" style="width: 100%;">
+			</div>
+
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		  <div class="caption-container">
+			<p id="caption"></p>
+		  </div>
+
+		  <div class="views">
+			<img class="demo" src="image2.jpg" onclick="currentSlide (1)" alt="Greece" style="width: 100%;">
+		  </div>
+	  
+		  <div class="views">
+			<img class="demo" src="image3.jpg" onclick="currentSlide(2)" alt="Dubai" style="width: 100%;" >
+		  </div>
+	  
+		  <div class="views">
+			<img class="demo" src="image4.jpg" onclick="currentSlide(3)" alt="Hot Air Ballon Ride" style="width: 100%;">
+		  </div>
+		</div>
+	</div>
+		
+
+
 </section>
 
 <section>
